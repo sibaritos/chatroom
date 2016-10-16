@@ -1,9 +1,9 @@
-a(href='/') List of Rooms
+a(href='/') Poto
 
-h2 Welcome to the "{{room.name}}" chat room
+h2 Bienvenidos al chat de "{{room.name}}" 
 
 .col
-  h3 Messages
+  h3 Mensajes
   .overflowable
     p(ng-repeat='message in room.messages',
       ng-class='{alert: message.user == "alert"}') {{message.user}}: {{message.text}}
